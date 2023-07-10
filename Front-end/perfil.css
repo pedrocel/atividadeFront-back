@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+    height: 99vh;
+    
+}
+div{
+    display: flex;
+    background:linear-gradient(white,rgb(172, 172, 185));
+    width: 1000px;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    
+    
+}
+
+
+#form{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(7, 1, 2, 0.007),white);
+    border-radius: 100px;
+    
+
+}
+#nomecompleto{
+    width: 350px;
+}
+
+#cpf{
+    width:180px ;
+}
+
+#usuario{
+    width:180px ;
+   
+   
+    
+}
+#password{
+    width:180px ;
+   
+
+}
+#salvar{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(219, 191, 172);
+    color: rgb(86, 65, 65);
+    font-weight: bolder;
+}
+#sair{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(219, 191, 172);
+    color: rgb(86, 65, 65);
+    font-weight: bolder;
+}
+#entrar:hover{
+    background-color: rgb(160, 144, 144);
+}
+#criarconta:hover{
+    background-color: rgb(160, 144, 144);
+}
+h1{
+    color: black;
+    font-style: oblique;
+}
+
+th{
+    background-color: black;
+    color: white;
+
+}
+td{
+    border: 1px solid black;
+    width: 200px;
+    background-color: rgb(172, 172, 185);
+}
+button{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(219, 191, 172);
+    color: rgb(86, 65, 65);
+    font-weight: bolder;
+}
+
+#nome{
+    width: 500px;
+}

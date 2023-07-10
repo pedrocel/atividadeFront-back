@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+    height: 99vh;
+    
+}
+div{
+    display: flex;
+    background:linear-gradient(white,rgb(172, 172, 185));
+    width: 600px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    
+    
+}
+
+
+#form{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(7, 1, 2, 0.007),white);
+    border-radius: 100px;
+    
+
+}
+
+#usuario{
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    border-bottom: solid 1px rgb(14, 14, 14);
+    background-color: transparent;
+    transition: border-color 0.2s;
+   
+
+    
+}
+#password{
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    border-bottom: solid 1px rgb(14, 14, 14);
+    background-color: transparent;
+    transition: border-color 0.2s;
+   
+
+}
+#entrar{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(219, 191, 172);
+    color: rgb(86, 65, 65);
+    font-weight: bolder;
+}
+#criarconta{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(219, 191, 172);
+    color: rgb(86, 65, 65);
+    font-weight: bolder;
+}
+#entrar:hover{
+    background-color: rgb(160, 144, 144);
+}
+#criarconta:hover{
+    background-color: rgb(160, 144, 144);
+}
+h1{
+    color: black;
+    font-style: oblique;
+}

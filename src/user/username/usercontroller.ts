@@ -6,7 +6,7 @@ import { userService } from "./userservice";
 export class UserController {
   constructor(private readonly userService: userService) {}
 
-  @Post('criarUser')
+  @Post('/criarUser')
   async createUser(
     @Body('usuario') usuario: string,
     @Body('password') password: string,

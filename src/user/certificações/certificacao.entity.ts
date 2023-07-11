@@ -15,6 +15,7 @@ instituicao:string;
 @Column()
 data_termino:string;
 
-
+@Column()
+id_usuario:number;
 
 }

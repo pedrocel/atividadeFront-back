@@ -15,7 +15,8 @@ nome_curso:string;
 @Column()
 ano_conclusao:string;
 
-
+@Column()
+id_usuario:number;
 
 
 

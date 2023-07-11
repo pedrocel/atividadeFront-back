@@ -10,6 +10,8 @@ import { atividadeextracurriculares } from './user/atividadeextracurriculares/ex
 import { username } from './user/username/user.entity';
 import { UserController } from './user/username/usercontroller';
 import { userService } from './user/username/userservice';
+import { authService } from './user/auth/auth.service';
+import { AuthController } from './user/auth/authcontroller';
 
 @Module({
   imports: [ TypeOrmModule.forRoot({
@@ -22,7 +24,7 @@ import { userService } from './user/username/userservice';
     synchronize: true,
   }),TypeOrmModule.forFeature([experienciaprofissional,escolaridade,contatos,certificacoes,atividadeextracurriculares,username])],
   
-  controllers: [AppController,UserController],
-  providers: [AppService , userService],
+  controllers: [AppController,UserController,AuthController],
+  providers: [AppService , userService, authService],
 })
 export class AppModule {}

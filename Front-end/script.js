@@ -3,21 +3,37 @@ function entrar(){
     var usuario = document.getElementById('usuario').value;
     var password = document.getElementById('password').value;
 
-    if (usuario === 'mario' && password === '123') {
-        alert("Acesso liberado");
-        window.location.href = 'perfil.html';
-      } else if (usuario === '' || password === '') {
-        alert("Erro! Campos vazios");
-        window.location.href = 'index.html';
-      } else {
-        alert("Usuário ou senha incorretos");
-        window.location.href = 'index.html';
-      }
-
-
+    const dataBody = {
+      usuario: usuario,
+      password: password
+    }
+  
+  
+    fetch('http://localhost:3000/login',{
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dataBody)
+  }
+  )
+  .then(function(response) {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(function(dataBody) {
+    window.location="perfil.html"
+  })
+  .catch(function(error) {
+    alert("error")
+    window.location="index.html"
+  });
 
 
 }
+
 
 function criarconta(){
 window.location = 'criarconta.html'

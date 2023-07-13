@@ -26,4 +26,7 @@ export class experienciaprofissional {
   @ApiProperty({ example: "ADMINISTRADOR", description: "NOME DO CARGO" })
   @Column()
   cargo: string;
+
+  @Column()
+  id_usuario:number;
 }

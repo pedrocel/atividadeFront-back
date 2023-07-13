@@ -12,8 +12,7 @@ nome_atividade:string;
 @Column()
 detalhes:string;
 
-
-
-
+@Column()
+id_usuario:number;
 
 }

@@ -22,6 +22,8 @@ import { escolaridadeService } from './user/escolaridade/escolaridade.service';
 import { contatosService } from './user/contatos/contato.service';
 import { certificacoesService } from './user/certificações/certificacao.service';
 import { atividadeextracurricularesService } from './user/atividadeextracurriculares/extracurricular.service';
+import { DashboardController } from './dashboard/dashboard.controller';
+import { DashboardService } from './dashboard/dashboard.service';
 
 @Module({
   imports: [ TypeOrmModule.forRoot({
@@ -34,7 +36,7 @@ import { atividadeextracurricularesService } from './user/atividadeextracurricul
     synchronize: true,
   }),TypeOrmModule.forFeature([experienciaprofissional,escolaridade,contatos,certificacoes,atividadeextracurriculares,username])],
   
-  controllers: [AppController,UserController,AuthController,UserController,experienciaController,escolaridadeController,contatosController,certificacoesController,atividadeextracurricularesController],
-  providers: [AppService , userService, authService,experienciaService,escolaridadeService,contatosService,certificacoesService,atividadeextracurricularesService],
+  controllers: [DashboardController ,AppController,UserController,AuthController,UserController,experienciaController,escolaridadeController,contatosController,certificacoesController,atividadeextracurricularesController],
+  providers: [DashboardService ,AppService , userService, authService,experienciaService,escolaridadeService,contatosService,certificacoesService,atividadeextracurricularesService],
 })
 export class AppModule {}

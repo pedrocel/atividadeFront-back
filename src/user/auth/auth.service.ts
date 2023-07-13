@@ -16,7 +16,7 @@ private readonly authService: Repository<username>
         const {usuario , password } = login
         const user = await this.authService.findOne({where:{usuario,password}})
 
-        if (!user || user.password !== password) {
+        if (!user || user.password != password) {
             throw new Error('Invalid email or password');
           }
       
